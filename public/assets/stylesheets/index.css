@@ -1,0 +1,138 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+body #root header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+}
+body #root header a img {
+    width: 50%;
+}
+body #root header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    list-style-type: none;
+}
+body #root header ul li a {
+    text-decoration: none;
+    color: black;
+}
+body #root main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    height: 87vh;
+    position: fixed;
+    bottom: 0;
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+.reveal{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+}
+.active{
+    transform: translateY(50px);
+    animation: show 2s;
+    opacity: 1;
+    
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body #root footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    bottom: 0px;
+    position: fixed;
+}
+body #root main .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 1200px;
+}
+body #root main .top img {
+    height: 60%;
+    animation: show 4s;
+}
+body #root main .top .welcomebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+body #root main .top .welcomebox h1 {
+    font-size: 9rem;
+    font-family: Tangerine;
+}
+body #root main .skills {
+    display: flex;
+}
+body #root main .about {
+    display: block;
+}
+body #root .Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body #root .Contact .contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+body #root .Contact .contactForm input {
+    font-size: 2rem;
+    width: 100%;
+}
+body #root .Contact .contactForm textarea {
+    font-size: 2rem;
+    width: 100%;
+}
+.skills ul {
+    list-style-type: none;
+}
+.skills ul li img {
+    width: 100px;
+}
+.welcome {
+    animation: show 2s;
+}
+.success {
+    max-width: 50vw;
+}
+body #root .Portfolio .portitem img {
+    width: 500px;
+}
